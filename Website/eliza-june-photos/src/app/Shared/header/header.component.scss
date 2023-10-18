@@ -1,0 +1,51 @@
+
+$color-primary: #272928;
+$color-secondary: #494D3F;
+$color-accent-1: #898A7C !default;
+$color-accent-2: #986A50 !default;
+$color-accent-3: #C6A488 !default;
+$color-accent-4: #D5C9B9 !default;
+
+.logo-region {
+    width: 100%;
+    background-color: #D5C9B9;
+    padding: 5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.landing-image {
+    width: 30%;
+}
+
+
+.menu-bar {
+    display:block;
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex; 
+    position: sticky; top:0; 
+    z-index: 999;
+}
+
+.menu-button {
+    border: none;
+    width: 100%;
+    transition-duration: 400ms;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #D5C9B9;
+    background: #272928;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background: #494D3F;
+    transition-duration: 400ms;
+}
+
+.menu-button:active {
+    background: #898A7C;
+    transition-duration: 250ms;
+}
+

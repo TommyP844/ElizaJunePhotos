@@ -1,0 +1,148 @@
+
+$color-primary: #272928;
+$color-secondary: #494D3F;
+$color-accent-1: #898A7C !default;
+$color-accent-2: #986A50 !default;
+$color-accent-3: #C6A488 !default;
+$color-accent-4: #D5C9B9 !default;
+
+.content {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    position: sticky; top:60px; 
+    z-index: 999;
+}
+
+.options {
+    width: 15%;
+    height: 100px;
+}
+
+
+.selected-image-type {
+    border: 1px solid black;
+}
+
+.images {
+    width: 85%;
+    height: 800px;
+    display:flex;
+}
+
+.content,.options,.images {
+    background-color: #D5C9B9;
+}
+
+.portfolio-btn {
+    margin: 10px 10px 10px 10px;
+    border: none;
+    background-color: transparent;
+    transition-duration: 300ms;
+    color:#272928;
+    font-size: 30px;
+    font-weight:600;
+}
+
+.portfolio-btn:first-child {
+    margin-top: 10px;
+}
+
+.portfolio-btn:hover {
+    color: #494D3F;
+    transition-duration: 300ms;
+    padding-left: 30px;
+}
+
+.portfolio-btn:active {
+    color: #898A7C;
+    transition-duration: 300ms;
+}
+
+.portfolio-btn-selected {
+    padding-left: 30px;
+    font-size: 40px;
+    transition-duration: 300ms;
+}
+
+
+.image-bounds {
+    width: calc(100% - 150px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-left: 1px solid #272928;
+    border-right: 1px solid #272928;
+}
+
+
+.image-scroll {
+    width: 150px;
+}
+
+.list {
+    list-style-type: none;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    //background-color: #C6A488;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.list:first-child {
+    padding-top: 10px;
+}
+
+.list:last-child {
+    padding-bottom: 10px;
+}
+
+ul,li {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.image-ul {
+    height: 100%;
+    overflow-y: auto;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Firefox */
+    /* Hide scrollbar for IE and Edge */
+    -ms-overflow-style: none;
+}
+
+
+.scroll-image {
+    transition-duration: 300ms;
+    display: block;
+}
+
+.scroll-image:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.scroll-image:active {
+    opacity: .25;
+    cursor: pointer;
+}
+
+ul::-webkit-scrollbar {
+    width: 8px; /* You can adjust the width as needed */
+  }
+  
+  /* Webkit browsers (Safari/Chrome) */
+  ul::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: transparent;
+  }

@@ -1,0 +1,84 @@
+$color-primary: #272928;
+$color-secondary: #494D3F;
+$color-accent-1: #898A7C !default;
+$color-accent-2: #986A50 !default;
+$color-accent-3: #C6A488 !default;
+$color-accent-4: #D5C9B9 !default;
+
+.content-area {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.content-section {
+    width: 50%;
+    display: flex;
+    background-color: #D5C9B9;
+    padding: 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    color: #272928;
+    width: 500px;
+    height: fit-content;
+}
+
+.about-img-div {
+    padding-left:50px;
+}
+
+.about-img {
+    width: 400px;
+    border-radius: 200px;
+    border: 2px solid $color-primary;
+    border-style: outset 5px;
+}
+
+
+.image-scroll {
+    width:25%;
+    height: 800px;
+    background-color: #D5C9B9;
+    overflow: hidden;
+}
+
+.list, ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent; /* For Firefox */
+  /* Hide scrollbar for IE and Edge */
+  -ms-overflow-style: none;
+}
+
+ul::-webkit-scrollbar {
+    width: 8px; /* You can adjust the width as needed */
+  }
+  
+  /* Webkit browsers (Safari/Chrome) */
+  ul::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: transparent;
+  }
+
+.scroll-image {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+

@@ -1,0 +1,47 @@
+
+
+<div class="content">
+
+    <div class="options">
+        <ul>
+            <li>
+                <button (click)="setImageType('Boudoir')" [className]="imageType === 'Boudoir' ? 'portfolio-btn-selected portfolio-btn' : 'portfolio-btn'">Boudior</button>
+            </li>
+            <li>
+                <button (click)="setImageType('Couples')" [className]="imageType === 'Couples' ? 'portfolio-btn-selected portfolio-btn' : 'portfolio-btn'">Couples</button>
+            </li>
+            <li>
+                <button (click)="setImageType('Family')" [className]="imageType === 'Family' ? 'portfolio-btn-selected portfolio-btn' : 'portfolio-btn'">Family</button>
+            </li>
+            <li>
+                <button (click)="setImageType('Maternity')" [className]="imageType === 'Maternity' ? 'portfolio-btn-selected portfolio-btn' : 'portfolio-btn'">Maternity</button>
+            </li>
+            <li>
+                <button (click)="setImageType('Newborn')" [className]="imageType === 'Newborn' ? 'portfolio-btn-selected portfolio-btn' : 'portfolio-btn'">Newborn</button>
+            </li>
+            <li>
+                <button (click)="setImageType('Birthday-Milestone')" [className]="imageType === 'Birthday-Milestone' ? 'portfolio-btn-selected portfolio-btn' : 'portfolio-btn'">Birthday/Milestone</button>
+            </li>
+            <li>
+                <button (click)="setImageType('Senior')" [className]="imageType === 'Senior' ? 'portfolio-btn-selected portfolio-btn' : 'portfolio-btn'">Senior</button>
+            </li>
+            <li>
+                <button (click)="setImageType('Weddings')" [className]="imageType === 'Weddings' ? 'portfolio-btn-selected portfolio-btn' : 'portfolio-btn'">Weddings</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="images">
+        <div class="image-bounds">
+            <img src="{{selectedImage}}">
+        </div>
+        <div class="image-scroll">
+            <ul class="image-ul">
+                <li *ngFor="let img of images[imageType]" class="list">
+                    <img src="/assets/Photos/Portfolio/{{ imageType + '/' + img}}" class="scroll-image" (click)="setSelected(imageType, img)" />
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
