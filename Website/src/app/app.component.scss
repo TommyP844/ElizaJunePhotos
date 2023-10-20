@@ -1,9 +1,28 @@
 
-.parallax {
-    background-image: url('/assets/Photos/BackgroundImage.png');
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-blend-mode: hard-light;
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-section {
+    width: 100%;
+    padding: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-statement {
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+
+.video {
+    background-color: #272928;
 }

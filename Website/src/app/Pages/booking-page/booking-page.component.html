@@ -1,54 +1,76 @@
 
 
 <div class="form">
+
+    <div class="scrolling-images">
+        <app-scrolling-images></app-scrolling-images>
+    </div>
+
     <div class="content">
-        <p>Name</p>
-        <input type="text" placeholder="Name..." />
-        <br />
-        <p>Email Address</p>
-        <input type="text" placeholder="name@email.com" />
+        <div class="flex">
+            <div class="flex-item">
+                <p>Name</p>
+                <input type="text" placeholder="Name..." />
+            </div>
+            <div class="flex-item">
+                <p>Email Address</p>
+                <input type="text" placeholder="name@email.com" />
+            </div>
+        </div>
 
-        <p>Session</p>
-        <input id="bump-to-baby" type="radio" name="sessionType" />
-        <label for="bump-to-baby">Bump to Baby</label>
-        <br/>
-        <input id="maternity-engagement" type="radio" name="sessionType" />
-        <label for="maternity-engagement">Maternity/Engagment</label>
-        <br/>
-        <input id="newborn-session" type="radio" name="sessionType" />
-        <label for="newborn-session">Newborn Session</label>
-        <br/>
-        <input id="family-session" type="radio" name="sessionType" />
-        <label for="family-session">Family Session</label>
-        <br/>
-        <input id="birthday-milestone" type="radio" name="sessionType" />
-        <label for="birthday-milestone">Birthday/Milestone</label>
-        <br/>
-        <input id="senior-session" type="radio" name="sessionType" />
-        <label for="senior-session">Senior Session</label>
-        <br/>
-        <input id="weddingBtn" type="radio" name="sessionType" />
-        <label for="weddingBtn">Wedding</label>
-        <br/>
-        <input id="special-request" type="radio" name="sessionType" />
-        <label for="special-request">Special Request</label>
+        <div class="flex">
+            <div class="flex-item">
+                <p>Session</p>
+                <input id="bump-to-baby" type="radio" name="sessionType" />
+                <label for="bump-to-baby">Bump to Baby</label>
+                <br/>
+                <input id="maternity-engagement" type="radio" name="sessionType" />
+                <label for="maternity-engagement">Maternity/Engagment</label>
+                <br/>
+                <input id="newborn-session" type="radio" name="sessionType" />
+                <label for="newborn-session">Newborn Session</label>
+                <br/>
+                <input id="family-session" type="radio" name="sessionType" />
+                <label for="family-session">Family Session</label>
+                <br/>
+                <input id="birthday-milestone" type="radio" name="sessionType" />
+                <label for="birthday-milestone">Birthday/Milestone</label>
+                <br/>
+                <input id="senior-session" type="radio" name="sessionType" />
+                <label for="senior-session">Senior Session</label>
+                <br/>
+                <input id="weddingBtn" type="radio" name="sessionType" />
+                <label for="weddingBtn">Wedding</label>
+                <br/>
+                <input id="special-request" type="radio" name="sessionType" />
+                <label for="special-request">Special Request</label>
+            </div>
 
-        <br />
-        <label>How did you hear about me?</label>
-        <br/>
-        <select>
-            <option>Facebook</option>
-            <option>Google</option>
-            <option>Friend</option>
-            <option>Other</option>
-        </select>
+            <div class="flex-item">
+                <label>How did you hear about me?</label>
+                <br/>
+                <select>
+                    <option>Facebook</option>
+                    <option>Google</option>
+                    <option>Friend</option>
+                    <option>Other</option>
+                </select>
 
-        <br/>
+            </div>
+        </div>
 
-        <label>Message</label>
-        <br/>
-        <textarea placeholder="Message..."></textarea>
-        <br />
-        <button>Message!</button>
+        <div style="display:flex;justify-content: center;">
+            <div>
+                <label>Message</label>
+                <br/>
+                <textarea placeholder="Message..."></textarea>
+                <br />
+                <button>Message!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="scrolling-images">
+        <app-scrolling-images></app-scrolling-images>
     </div>
 </div>

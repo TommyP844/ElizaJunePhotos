@@ -15,6 +15,9 @@ import { BookingPageMobileComponent } from './Pages/booking-page-mobile/booking-
 import { HttpClientModule } from '@angular/common/http';
 import { PortfolioPageComponent } from './Pages/portfolio-page/portfolio-page.component';
 import { PortfolioPageMobileComponent } from './Pages/portfolio-page-mobile/portfolio-page-mobile.component';
+import { MenuBarComponent } from './Shared/menu-bar/menu-bar.component';
+import { ScrollingImagesComponent } from './Shared/scrolling-images/scrolling-images.component';
+import { ContentCardComponent } from './Shared/content-card/content-card.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { PortfolioPageMobileComponent } from './Pages/portfolio-page-mobile/port
     BookingPageComponent,
     BookingPageMobileComponent,
     PortfolioPageComponent,
-    PortfolioPageMobileComponent
+    PortfolioPageMobileComponent,
+    MenuBarComponent,
+    ScrollingImagesComponent,
+    ContentCardComponent
   ],
   imports: [
     BrowserModule,

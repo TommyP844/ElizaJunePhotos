@@ -1,39 +1,34 @@
 
 <div class="content-area">
 
-    <div class="image-scroll">
-        <ul #leftScroll>
-            <li *ngFor="let img of imagesLeft" class="list">
-                <img src="{{img}}" class="scroll-image" />
-            </li>
-        </ul>
+    <div class="scrolling-images">
+        <app-scrolling-images></app-scrolling-images>
     </div>
 
-    <div class="content-section">
-        <div class="about-content">
-            <p>
-                Hi, I'm Kelsie Hyden.
-            </p>
-            <br />
-            <p>
-                Voted Monroe county's best photographer for 2023!
-            </p>
-            <br />
-            <p>
-                I'm a photographer based out of SE Mi. I started my photography journey about three years ago after we welcomed our sweet daughter Eliza into the world & I've been lucky enough to grow an awesome client base however, I always love working with new clients! I'm very social & out going there will never be a dull moment in our session & you will never wonder what to do I'll take the lead for you & will create some beautiful images! Send me a message & lets get you on the schedule, I cant wait to capture you! 
+    <div class="about-wrapper">
+        <div class="content-section">
+            <p #name class="name-header">
+                Hi! I'm Kelsie.
             </p>
         </div>
-        <div class="about-img-div">
-            <img src="/assets/Photos/kelsie.png" class="about-img" />
-        </div>
-    </div>
 
-    <div class="image-scroll">
-        <ul #rightScroll>
-            <li *ngFor="let img of imagesRight" class="list">
-                <img src="{{img}}" class="scroll-image" />
-            </li>
-        </ul>
+        <div class="content-section">
+            <div class="about-content">
+                <p #bio class="bio">
+                    Voted Monroe county's best photographer for 2023!
+                    <br><br>
+                    I'm a photographer based out of SE Mi. I started my photography journey about three years ago after we welcomed our sweet daughter Eliza into the world & I've been lucky enough to grow an awesome client base however, I always love working with new clients! I'm very social & out going there will never be a dull moment in our session & you will never wonder what to do I'll take the lead for you & will create some beautiful images! Send me a message & lets get you on the schedule, I cant wait to capture you! 
+                </p>
+            </div>
+            <div class="about-img-div">
+                <img src="/assets/Photos/kelsie.png" class="about-img" />
+            </div>
+        </div>
+
     </div>
+        <div class="scrolling-images">
+            <app-scrolling-images></app-scrolling-images>
+        </div>
+    
 </div>
 

@@ -1,20 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
 
-$color-primary: #272928;
-$color-secondary: #494D3F;
-$color-accent-1: #898A7C !default;
-$color-accent-2: #986A50 !default;
-$color-accent-3: #C6A488 !default;
-$color-accent-4: #D5C9B9 !default;
-
+:root {
+    --primary: #96806C;
+    --secondary: #252e20;
+    --accent-1: #005B41;
+    --accent-2: #008170;
+}
 
 * {
     font-weight: 500;
     font-size: 22px;
-    font-family: 'dancing-script', sans-serif;
+    font-family: 'moontime', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    background-color: var(--primary);
+    color: var(--secondary);
 }

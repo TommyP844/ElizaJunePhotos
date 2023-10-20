@@ -40,7 +40,7 @@ async function buildImageMap(directoryPath) {
 
 // Define the route to list image paths
 app.get('/api/images', (req, res) => {
-  const imagesDirectory = '../Website/eliza-june-photos/src/assets/Photos/Home'; // Change 'images' to your image directory
+  const imagesDirectory = '../Website//src/assets/Photos/Home'; // Change 'images' to your image directory
 
   fs.readdir(imagesDirectory, (err, files) => {
     if (err) {
@@ -56,7 +56,7 @@ app.get('/api/images', (req, res) => {
 });
 
 app.get('/api/portfolio', async(req, res) => {
-    const imagesDirectory = '../Website/eliza-june-photos/src/assets/Photos/Portfolio'; // Change 'images' to your image directory
+    const imagesDirectory = '../Website/src/assets/Photos/Portfolio'; // Change 'images' to your image directory
     try {
       const imageMap = await buildImageMap(imagesDirectory);
       res.json(imageMap);
